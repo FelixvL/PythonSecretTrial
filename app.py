@@ -7,5 +7,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    geheim = "hoidaar"
+    VANMIJGEHEIM = config('OOGEHEIM')
+    geheim = VANMIJGEHEIM
     return "<p>Hello, World!</p>" + geheim
